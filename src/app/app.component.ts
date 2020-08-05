@@ -21,6 +21,7 @@ export class AppComponent  {
     this.obj2 = obj1;
   }
   sendObj(obj1){
+    try{
     let pos1 = Number.parseInt(obj1.getAttribute('value'));
     let pos2 = Number.parseInt(this.obj2.getAttribute('value'));
     //console.log(pos1+" "+pos2);
@@ -40,6 +41,9 @@ export class AppComponent  {
       //console.log('d');
       this.changeValue(obj1,this.obj2);
       
+    }
+    }
+    catch(Exception){
     }
   }
   checkItIsWon(tag1,tag2,tag3,tag4,tag5,tag6,tag7,tag8){
