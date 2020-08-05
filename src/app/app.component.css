@@ -1,3 +1,18 @@
-p {
-  font-family: Lato;
+.cell{
+  display:table-cell;
+  border:1px solid black;
+  padding: 50px 50px 50px 50px;
+  margin-left: 50px;
+}
+#row{
+  display:table-row;
+  
+}
+#table{
+  display: table;
+}
+td{
+  border:2px solid black;
+  padding:50px;
+  background-color:lightblue;
 }
