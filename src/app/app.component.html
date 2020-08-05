@@ -1,27 +1,27 @@
 
 
 <div *ngIf="won;else printWinMessage">
-<button (click)=getObj(tage)></button>
+<button (click)=getObj(tage)>Start</button>
 <table (click) =checkItIsWon(tag1,tag2,tag3,tag4,tag5,tag6,tag7,tag8)  >
   <tr>
-    <td #tag1 value='1' (click)=sendObj(tag1,tage)>3</td>
-    <td #tag2 value='2' (click)=sendObj(tag2,tage)>8</td>
-    <td #tag3 value='3' (click)=sendObj(tag3,tage)>5</td>
+    <td #tag1 value='1' (click)=sendObj(tag1)>3</td>
+    <td #tag2 value='2' (click)=sendObj(tag2)>8</td>
+    <td #tag3 value='3' (click)=sendObj(tag3)>5</td>
   </tr>
   <tr>
-    <td #tag4 value='4' (click)=sendObj(tag4,tage)>1</td>
-    <td #tag5 value='5' (click)=sendObj(tag5,tage)>2</td>
-    <td #tag6 value='6' (click)=sendObj(tag6,tage)>6</td>
+    <td #tag4 value='4' (click)= sendObj(tag4)>1</td>
+    <td #tag5 value='5' (click)=sendObj(tag5)>2</td>
+    <td #tag6 value='6' (click)=sendObj(tag6)>6</td>
   </tr>
   <tr>
-    <td #tag7 value='7' (click)=sendObj(tag7,tage)>4</td>
-    <td #tag8 value='8' (click)=sendObj(tag8,tage)>7</td>
-    <td #tage value='9' (click)=sendObj(tage,tage)></td>
+    <td #tag7 value='7' (click)=sendObj(tag7)>4</td>
+    <td #tag8 value='8' (click)=sendObj(tag8)>7</td>
+    <td #tage value='9' (click)=sendObj(tage)></td>
   </tr>
 </table>
 </div>
 <ng-template #printWinMessage>
-<div styel="margin:50% 50% 50% 50%">
+<div >
   You Won!!!
 </div> 
 </ng-template>

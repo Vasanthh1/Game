@@ -4,6 +4,9 @@
   padding: 50px 50px 50px 50px;
   margin-left: 50px;
 }
+.w{
+  margin:"50% 50% 50% 50%";
+}
 #row{
   display:table-row;
   
