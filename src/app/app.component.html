@@ -1,17 +1,20 @@
+
+<button (click)=getObj(tage)></button>
+<p></p>
 <table>
   <tr>
-    <td #tag1>1</td>
-    <td #tag2>2</td>
-    <td #tag3>3</td>
+    <td #tag1 value='1' (click)=sendObj(tag1,tage)>3</td>
+    <td #tag2 value='2' (click)=sendObj(tag2,tage)>8</td>
+    <td #tag3 value='3' (click)=sendObj(tag3,tage)>5</td>
   </tr>
   <tr>
-    <td #tag4>4</td>
-    <td #tag5>5</td>
-    <td #tag6>6</td>
+    <td #tag4 value='4' (click)=sendObj(tag4,tage)>1</td>
+    <td #tag5 value='5' (click)=sendObj(tag5,tage)>2</td>
+    <td #tag6 value='6' (click)=sendObj(tag6,tage)>6</td>
   </tr>
   <tr>
-    <td #tag7>7</td>
-    <td #tag8>8</td>
-    <td #tage></td>
+    <td #tag7 value='7' (click)=sendObj(tag7,tage)>4</td>
+    <td #tag8 value='8' (click)=sendObj(tag8,tage)>7</td>
+    <td #tage value='9' (click)=sendObj(tage,tage)></td>
   </tr>
 </table>
