@@ -1,17 +1,15 @@
-import { Component, VERSION ,OnInit} from '@angular/core';
+import { Component, VERSION ,OnInit, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'my-app', 
-  template:`
-  <p>{{name}}</p>
-  `,
+  templateUrl:'./app.component.html',
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  color = "r";
-  cond = true;
-  dat = "";
-  name:string ='hai vasanth';
-  getName(){return this.name;}
-  save(data){this.dat = data;}
+  constructor(private i:ElementRef){}
+  
+  s(obj){
+    console.log('hello');
+    console.log(obj);
+  }
 }
