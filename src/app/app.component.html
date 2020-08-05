@@ -1,7 +1,8 @@
 
+
+<div *ngIf="won;else printWinMessage">
 <button (click)=getObj(tage)></button>
-<p></p>
-<table>
+<table (click) =checkItIsWon(tag1,tag2,tag3,tag4,tag5,tag6,tag7,tag8)  >
   <tr>
     <td #tag1 value='1' (click)=sendObj(tag1,tage)>3</td>
     <td #tag2 value='2' (click)=sendObj(tag2,tage)>8</td>
@@ -18,3 +19,9 @@
     <td #tage value='9' (click)=sendObj(tage,tage)></td>
   </tr>
 </table>
+</div>
+<ng-template #printWinMessage>
+<div styel="margin:50% 50% 50% 50%">
+  You Won!!!
+</div> 
+</ng-template>

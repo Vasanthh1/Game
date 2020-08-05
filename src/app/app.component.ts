@@ -8,6 +8,7 @@ import { Component, VERSION ,OnInit, ElementRef, ViewChild} from '@angular/core'
 export class AppComponent  {
   //constructor(private i:ElementRef){}
   obj2: HTMLElement;
+  won = true;
   getObj(obj){
     this.obj2 = obj;
   }
@@ -41,4 +42,13 @@ export class AppComponent  {
       
     }
   }
+  checkItIsWon(tag1,tag2,tag3,tag4,tag5,tag6,tag7,tag8){
+    if(tag1.innerHTML==1 && tag2.innerHTML==2 && tag3.innerHTML==3 &&
+    tag4.innerHTML==4 && tag5.innerHTML==5 && tag6.innerHTML==6 &&
+    tag7.innerHTML==7 && tag8.innerHTML==8)
+      this.won =  false;
+    else
+    this.won =  true;
+
+}
 }
